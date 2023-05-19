@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root{
+    --Inter: 'Inter', sans-serif;
+    --Softorange: hsl(35, 77%, 62%);
+    --Softred: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%); 
+    --Grayishblue: hsl(233, 8%, 79%); 
+    --Darkgrayishblue: hsl(236, 13%, 42%);
+    --Verydarkblue: hsl(240, 100%, 5%);
+}
+
+h1{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Inter);  
+    padding: 90px 165px 0 165px ;
+    background-color: var(--Off-white);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    width: 1111px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    font-size: 16px;
+}
+
+nav a:hover:nth-child(-n + 5){
+    color: var(--Softred);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--Darkgrayishblue);
+}
+
+.imagen-menu{
+    display: none;
+}
+
+.menu-productos{
+    display: none;
+}
+
+.image-menu-cierre{
+    display: none;
+}
+
+/****************************/
+.container main{
+    display: flex;
+    gap: 30px;
+}
+
+.piezas-desktop{
+    width: 730px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.piezas-movil{
+    display: none;
+}
+
+.division-1{
+    display: flex;
+    width: 730px;
+}
+
+.question h1{
+    font-size: 56px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 800;
+    color: var(--Verydarkblue);
+}
+
+.answer p{
+    margin: 0;
+    margin-left: 5rem;
+    line-height: 23px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    color: var(--Darkgrayishblue);
+}
+
+.answer .button-1{
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 5rem;
+    padding: 16px 32px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    background-color: var(--Softred);
+}
+
+.answer .button-1:hover{
+    background-color: var(--Verydarkblue);
+}
+
+.notice{
+    width: 350px;
+    height: 511px;
+    background-color: var(--Verydarkblue);
+    color: white;
+}
+
+.notice h2{
+    margin: 30px 25px 0 25px;
+    font-size: 40px;
+    color: var(--Softorange);
+}
+
+.noti{
+    margin: 29px 25px 59px 25px;
+}
+
+.noti p{
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    color: var(--Grayishblue);
+}
+
+.noti h3{
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.noti h3:hover:nth-child(-n + 3){
+    color: var(--Softorange);
+    cursor: pointer;
+}
+
+.notice-1{
+    position: relative;
+}
+
+.notice-1::after{
+    position: absolute;
+    content: "";
+    top: 7rem;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--Darkgrayishblue);
+}
+
+.notice-2{
+    position: relative;
+}
+
+.notice-2::after{
+    position: absolute;
+    content: "";
+    top: 7rem;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--Darkgrayishblue);
+}
+
+/******************************************/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    width: 1111px;
+}
+
+.page{
+    display: flex;
+    align-items: start;
+    gap: 29px;
+}
+
+.page h2{
+    margin: 0;
+    font-size: 35px;
+    color: var(--Grayishblue);
+}
+
+.page h3{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 6px 0;
+}
+
+.page h3:hover{
+    color: var(--Softred);
+    cursor: pointer;
+}
+
+.page img{
+    width: 100px;
+    height: 127px;
+}
+
+.page-1{
+    width: 210px;
+    margin-right: 40px;
+}
+
+.page-2{
+    margin-right: 80px;
+}
+
+.page-1 p, .page-2 p, .page-3 p{
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--Darkgrayishblue);
+}
+
+@media only screen and (max-width: 1000px){
+
+    body{
+        padding: 30px 16px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header{
+        width: auto;
+    }
+
+    .piezas-desktop{
+        display: block;
+        width: calc(100% - 13px);
+        height: auto;
+        object-fit: cover;
+    }
+
+    .piezas-movil{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+    }
+
+    .container main{
+        flex-direction: column;
+    }
+
+    .division-1{
+        flex-direction: column;
+    }
+    
+    .question h1{
+        width: 100%;
+    }
+
+    .answer .button-1{
+        margin-left: 0;
+    }
+
+    .answer p{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .notice{
+        width: calc(100% - 13px);
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: baseline;
+        width: auto;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 495px){
+    body{
+        display: block;
+        justify-content: center;
+        padding:0;
+    }
+
+    .overflow{
+        overflow-y: hidden; /*Para que la pantalla no se mueva*/
+    }
+
+    .container{
+        padding: 30px 16px;
+        width: 97%;
+    }
+
+    .piezas-desktop{
+        display: none;
+    }
+
+    .menu-productos{
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+
+        /*display: flex*/
+        justify-content: center;
+        padding-top: 10rem;
+        background: linear-gradient(90deg, rgba(0,0,0,0.5) 0% 35%, rgba(255,255,255,1) 35% 100%);
+    }
+    
+    .productos ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 25px;
+    }
+
+    .productos ul :nth-child(-n + 5){ /*************/
+        text-decoration: none;
+        list-style: none;
+        color: var(--Verydarkblue);
+    }
+
+    .imagen-menu{
+        display: block;
+    }
+    
+    .image-menu-cierre{
+        z-index: 1;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .piezas-movil{
+        display: block;
+        width: 100%;
+    }
+
+    .question h1{
+        max-width: 365px;
+        margin-top: 20px;
+        font-size: 51px;
+    }
+
+    .answer p {
+        font-size: 20px;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .answer .button-1 {
+        padding: 18px 36px;
+        font-size: 17px;
+    }
+
+    .notice{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .division-1{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .activacion{
+        display: flex !important;
+    }
+
+    .desactivacion{
+        display: none;
+    }
+}
